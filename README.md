@@ -1,119 +1,97 @@
-# 🚀 Food Demand Forecasting & Promotion Optimization
+# 📊 Food Demand Forecasting & Promotion Optimization
 
-## 📌 Overview
-
-This project predicts weekly food demand using machine learning and provides actionable business recommendations for pricing and promotions.
-
-It simulates real-world business decision-making for inventory and marketing optimization.
+This project predicts weekly food demand using machine learning and helps optimize pricing and promotional strategies for better business decisions.
 
 ---
 
-## ⚙️ Features
-
-* 📊 Data preprocessing & feature engineering
-* 🤖 Multiple ML model comparison:
-
-  * Linear Regression
-  * Random Forest
-  * Gradient Boosting
-  * XGBoost
-  * LightGBM
-  * CatBoost (Final Model)
-* 🔧 Hyperparameter tuning (GridSearch)
-* 📈 Interactive dashboard using ipywidgets
-* 💡 Business recommendations engine
-* 📉 Price vs Demand simulation
+## 🚀 Features
+- 📈 Predict weekly demand based on pricing, promotions, and seasonality  
+- 🎯 Analyze the impact of checkout price on demand  
+- 📊 Price vs Demand simulation graph  
+- 🧠 Feature engineering (discount, discount %, seasonal patterns)  
+- 🖥️ Interactive dashboard using sliders (Google Colab)  
+- 📌 Business recommendations based on predictions  
 
 ---
 
-## 🧠 Final Model
-
-**CatBoost Regressor (Tuned)**
-
-* R² Score: ~0.49
-* Best Parameters:
-
-  * depth = 6
-  * iterations = 500+
-  * learning_rate = 0.1
+## 🧠 Model Used
+- **CatBoost Regressor**
+- R² Score: ~0.49  
+- Handles both categorical and numerical features effectively  
 
 ---
 
-## 📊 Dashboard Capabilities
+## 📊 Sample Output
 
-* Adjust:
-
-  * Price
-  * Base Price
-  * Week
-  * Promotion
-  * Homepage Feature
-* Predict demand instantly
-* Get:
-
-  * Demand insights
-  * Business recommendations
-  * Price-demand visualization curve
+**Predicted Weekly Demand:** `1150 orders`
 
 ---
 
-## 📂 Dataset
+## 📸 Dashboard Preview
 
-* File: `Food demand.csv`
-* Includes:
+### 🔹 Interactive UI
+![Dashboard](images/dashboard.png)
 
-  * Pricing details
-  * Promotions
-  * Weekly demand
-  * Product-level data
+### 🔹 Prediction Output
+![Output](images/output.png)
+
+### 🔹 Price vs Demand Graph
+![Graph](images/graph.png)
+
+---
+
+## ⚠️ Note
+The interactive dashboard (sliders & predict button) works in **Google Colab**.  
+GitHub preview shows **static outputs only**.
+
+---
+
+## 🔗 Run Interactive Version
+👉 [Open in Colab](https://colab.research.google.com/drive/1ixYCWmK8cI4s21lumWFHzsEA196z36Dy#scrollTo=Q_dxL7VkSHiJ)
+
+---
+
+## 📁 Project Structure
+food-demand-forecasting/
+│
+├── Food_Demanding_Forecasting.ipynb
+├── Food demand.csv
+├── requirements.txt
+├── README.md
+│
+└── images/
+├── dashboard.png
+├── output.png
+└── graph.png
 
 ---
 
 ## 🛠️ Tech Stack
-
-* Python
-* Pandas, NumPy
-* Scikit-learn
-* CatBoost, XGBoost, LightGBM
-* Matplotlib
-* ipywidgets
-
----
-
-## ▶️ How to Run
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run notebook:
-
-```
-Food_Demanding_Forecasting_Dashboard.ipynb
-```
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Scikit-learn  
+- CatBoost  
+- ipywidgets  
 
 ---
 
 ## 💡 Key Insights
-
-* Demand decreases as price increases
-* Promotions significantly boost demand
-* Feature engineering improves model performance
-* CatBoost outperformed other models
+- Demand decreases as checkout price increases  
+- Promotions and homepage visibility significantly boost demand  
+- Discount percentage is a strong influencing feature  
+- Seasonal patterns (weekly cycles) impact demand  
 
 ---
 
-## 🚀 Future Improvements
-
-* Deploy as Streamlit web app
-* Add time-series forecasting (LSTM / ARIMA)
-* Real-time pricing optimization
-* Multi-product recommendation system
+## 🎯 Future Improvements
+- Deploy as a web app using Streamlit  
+- Improve model performance (hyperparameter tuning)  
+- Add real-time prediction system  
+- Enhance UI for better usability  
 
 ---
 
 ## 👨‍💻 Author
-
 **Punith Kumar**
