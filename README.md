@@ -52,6 +52,8 @@ GitHub preview shows **static outputs only**.
 ---
 
 ## 📁 Project Structure
+
+```bash
 food-demand-forecasting/
 │
 ├── Food_Demanding_Forecasting.ipynb
@@ -60,9 +62,9 @@ food-demand-forecasting/
 ├── README.md
 │
 └── images/
-├── dashboard.png
-├── output.png
-└── graph.png
+    ├── dashboard.png
+    ├── output.png
+    └── graph.png
 
 ---
 
